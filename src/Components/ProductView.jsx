@@ -10,18 +10,17 @@ const ProductView = () => {
   const isMobile = useMediaQuery({query:'(max-width:1024px)'})
   return (
     <section id="product-viewer">
-      <h2>Take a closer look</h2>
+      <h2 className="px-8">Take a closer look</h2>
       <div className="controls">
-        <p className="info">
-          Mackbook 16 {scale} in {color}
+        <p className="info">MacBook Pro 16” in Space Black
         </p>
         <div className="flex-center gap-5 mt-5">
           <div className="color-control">
             <div
-              onClick={() => setcolor("#abd5bd")}
+              onClick={() => setcolor("#d1d1d1")}
               className={clsx(
                 "bg-neutral-300",
-                color === "#abd5bd" && "active",
+                color === "#d1d1d1" && "active",
               )}
             />
             <div

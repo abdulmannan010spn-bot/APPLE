@@ -1,12 +1,29 @@
 import { useGLTF, useTexture } from '@react-three/drei'
-// BUG FIX: screen.png lives in src/assets, so it must be imported as a
-// module for Vite to process/resolve it — a raw string path only works
-// for files under the public/ folder, not src/.
 import screenImg from "../../assets/screen.png";
+import useMackbookstore from '../../Store/main';
+import { useEffect } from 'react';
+import { noChangeParts } from '../../Constants';
+import * as THREE from "three";
+
+
 
 export default function MacbookModel14(props) {
+  const {color} = useMackbookstore();
   const texture = useTexture(screenImg)
-  const { nodes, materials } = useGLTF('/models/macbook-14-transformed.glb')
+  const { nodes, materials, scene } = useGLTF('/models/macbook-14-transformed.glb')
+
+useEffect(() => {
+  scene.traverse((child) => {
+    if (child.isMesh) {
+      // Change color of every mesh except the excluded ones
+      if (!noChangeParts.includes(child.name)) {
+        child.material.color = new THREE.Color(color)
+      }
+    }
+  });
+   
+}, [color,scene]);
+  
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_10.geometry} material={materials.PaletteMaterial001} rotation={[Math.PI / 2, 0, 0]} />

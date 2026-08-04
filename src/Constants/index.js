@@ -1,3 +1,11 @@
+import performance1 from "../assets/performance1.png";
+import performance2 from "../assets/performance2.png";
+import performance3 from "../assets/performance3.png";
+import performance4 from "../assets/performance4.png";
+import performance5 from "../assets/performance5.jpg";
+import performance6 from "../assets/performance6.png";
+import performance7 from "../assets/performance7.png";
+
 const navLinks = [
     { label: "Store" },
     { label: "Mac" },
@@ -27,13 +35,13 @@ const noChangeParts = [
 ];
 
 const performanceImages = [
-    { id: "p1", src: "/performance1.png" },
-    { id: "p2", src: "/performance2.png" },
-    { id: "p3", src: "/performance3.png" },
-    { id: "p4", src: "/performance4.png" },
-    { id: "p5", src: "/performance5.jpg" },
-    { id: "p6", src: "/performance6.png" },
-    { id: "p7", src: "/performance7.png" },
+  { id: "p1", src: performance1 },
+  { id: "p2", src: performance2 },
+  { id: "p3", src: performance3 },
+  { id: "p4", src: performance4 },
+  { id: "p5", src: performance5 },
+  { id: "p6", src: performance6 },
+  { id: "p7", src: performance7 },
 ];
 
 const performanceImgPositions = [

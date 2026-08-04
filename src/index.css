@@ -178,7 +178,7 @@ body {
 
         img {
           @apply h-full scale-150 lg:scale-100;
-         transform: scale(80);
+          transform: scale(80);
         }
 
         @media (max-width: 1024px) {
@@ -253,7 +253,7 @@ body {
       @apply mx-auto max-w-xl mt-24;
 
       p {
-        @apply lg:h3-semibold base-semibold text-center translate-y-10 opacity-0 px-5;
+        @apply lg:h3-semibold base-semibold text-center px-5;
       }
     }
   }

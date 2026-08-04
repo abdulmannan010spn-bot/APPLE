@@ -18,7 +18,7 @@ const Performance = () => {
         ))}
       </div>
 
-      <div className="content px-7">
+      <div className="content px-7 lg:px-1">
         <p>
           Run graphics-intensive workflows with a responsiveness that keeps up
           with your imagination. The M4 family of chips features a GPU with a

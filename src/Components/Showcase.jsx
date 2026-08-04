@@ -8,33 +8,31 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
-    const isTablet = useMediaQuery({query:'(max-width:1024)'})
+  const isTablet = useMediaQuery({ query: "(max-width:1024)" });
 
-    useGSAP(() => {
-        if(!isTablet){
-                    const t1 = gsap.timeline({
-            scrollTrigger:{
-                trigger:"#showcase",
-                markers:true,
-                scrub:true,
-                start:"top top",
-                end:"bottom top",
-                pin:true
-            }
-        })
-        t1.to(".mask img",{
-            scale:1.2,
-             
-        })
+  useGSAP(() => {
+    if (!isTablet) {
+      const t1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#showcase",
+          scrub: true,
+          start: "top top",
+          end: "bottom top",
+          pin: true,
+        },
+      });
+      t1.to(".mask img", {
+        scale: 1.2,
+      })
 
-        .from(".content",{
-            opacity:0,
-            ease:"power.inOut",
-            y:0
-        })
-        }
-
-    },[isTablet])
+        .from(".content", {
+          opacity: 0,
+          y: 100,
+          ease: "power2.out",
+          duration: 1,
+        });
+    }
+  }, [isTablet]);
   return (
     <section id="showcase">
       <div className="media">

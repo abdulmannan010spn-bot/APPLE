@@ -1,4 +1,4 @@
-import {footerLinks} from "../constants/index.js";
+import { footerLinks } from "../Constants"
 import logo from "../assets/logo.svg"
 
 const Footer = () => {

@@ -17,18 +17,19 @@ const Showcase = () => {
           trigger: "#showcase",
           scrub: true,
           start: "top top",
-          end: "bottom top",
+          end: "bottom 100%",
           pin: true,
         },
       });
       t1.to(".mask img", {
         scale: 1.2,
+        duration:1
       })
 
         .from(".content", {
           opacity: 0,
           y: 100,
-          ease: "power2.out",
+          ease: "power1.out",
           duration: 1,
         });
     }

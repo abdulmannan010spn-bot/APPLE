@@ -31,7 +31,7 @@ const Showcase = () => {
           y: 100,
           ease: "power1.out",
           duration: 1,
-        });
+        },"-=1");
     }
   }, [isTablet]);
   return (

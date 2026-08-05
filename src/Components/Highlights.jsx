@@ -6,7 +6,7 @@ import highlight from "../assets/highlight-bg.png";
 
 const Highlights = () => {
   return (
-    <section id="highlights">
+    <section id="highlights" className="px-4">
       <h2>There’s never been a better time to upgrade.</h2>
       <h3>Here’s what you get with the new MacBook Pro.</h3>
       <div className="masonry">

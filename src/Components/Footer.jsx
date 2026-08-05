@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg"
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="px-4">
             <div className="info">
                 <p>More ways to shop: Find an Apple Store or other retailer near you. Or call 000800 040 1966.</p>
                 <img src={logo} alt ="Apple logo"/>

@@ -4,9 +4,8 @@ import { useEffect } from "react";
 import * as THREE from "three";
 import { useGLTF, useVideoTexture } from "@react-three/drei";
 import useMackbookstore from "../../Store/main";
+import { noChangeParts } from '../../Constants';
 
-
-const noChangeParts = ["Object_123"];
 
 export default function MacBookModel(props) {
   
@@ -18,17 +17,17 @@ export default function MacBookModel(props) {
   
   const screenTexture = useVideoTexture(videoSrc);
 
-  useEffect(() => {
-    if (!scene) return;
-
-    scene.traverse((child) => {
-      if (child.isMesh) {
-        if (!noChangeParts.includes(child.name)) {
-          child.material.color = new THREE.Color(color);
-        }
+ useEffect(() => {
+  scene.traverse((child) => {
+    if (child.isMesh) {
+      // Change color of every mesh except the excluded ones
+      if (!noChangeParts.includes(child.name)) {
+        child.material.color = new THREE.Color(color)
       }
-    });
-  }, [color, scene]);
+    }
+  });
+ 
+}, [color,scene]);
 
   return (
     <group {...props} dispose={null}>

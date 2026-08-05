@@ -13,6 +13,20 @@ import featureIcon3 from "../assets/feature-icon3.svg";
 import featureIcon4 from "../assets/feature-icon4.svg";
 import featureIcon5 from "../assets/feature-icon5.svg";
 
+import v1 from "../assets/feature-1.mp4";
+import v2 from "../assets/feature-2.mp4";
+import v3 from "../assets/feature-3.mp4";
+import v4 from "../assets/feature-4.mp4";
+import v5 from "../assets/feature-5.mp4";
+
+const featureSequence = [
+  { videoPath: v1, boxClass: ".box1", delay: 1 },
+  { videoPath: v2, boxClass: ".box2", delay: 0 },
+  { videoPath: v3, boxClass: ".box3", delay: 0 },
+  { videoPath: v4, boxClass: ".box4", delay: 0 },
+  { videoPath: v5, boxClass: ".box5", delay: 0 },
+];
+
 const navLinks = [
     { label: "Store" },
     { label: "Mac" },
@@ -127,13 +141,6 @@ const features = [
     },
 ];
 
-const featureSequence = [
-    { videoPath: "/videos/feature-1.mp4", boxClass: ".box1", delay: 1 },
-    { videoPath: "/videos/feature-2.mp4", boxClass: ".box2", delay: 0 },
-    { videoPath: "/videos/feature-3.mp4", boxClass: ".box3", delay: 0 },
-    { videoPath: "/videos/feature-4.mp4", boxClass: ".box4", delay: 0 },
-    { videoPath: "/videos/feature-5.mp4", boxClass: ".box5", delay: 0 },
-];
 
 const footerLinks = [
     { label: "Privacy Policy", link: "#" },

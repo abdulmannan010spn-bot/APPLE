@@ -6,6 +6,13 @@ import performance5 from "../assets/performance5.jpg";
 import performance6 from "../assets/performance6.png";
 import performance7 from "../assets/performance7.png";
 
+
+import featureIcon1 from "../assets/feature-icon1.svg";
+import featureIcon2 from "../assets/feature-icon2.svg";
+import featureIcon3 from "../assets/feature-icon3.svg";
+import featureIcon4 from "../assets/feature-icon4.svg";
+import featureIcon5 from "../assets/feature-icon5.svg";
+
 const navLinks = [
     { label: "Store" },
     { label: "Mac" },
@@ -85,35 +92,35 @@ const performanceImgPositions = [
 const features = [
     {
         id: 1,
-        icon: "/feature-icon1.svg",
+        icon: featureIcon1,
         highlight: "Email AI.",
         text: "Summarize and draft replies to emails instantly, so you stay on top of your inbox.",
         styles: "left-5 md:left-20 top-[20%] opacity-0 translate-y-5",
     },
     {
         id: 2,
-        icon: "/feature-icon2.svg",
+        icon: featureIcon2,
         highlight: "Image AI.",
         text: "Generate or edit images with ease. Just type what you imagine, and let AI bring it to life.",
         styles: "right-5 md:right-20 top-[30%] opacity-0 translate-y-5",
     },
     {
         id: 3,
-        icon: "/feature-icon3.svg",
+        icon: featureIcon3,
         highlight: "Summarize AI.",
         text: "Turn long articles, reports, or notes into clear, bite-sized summaries in seconds.",
         styles: "left-5 md:left-20 top-[50%] opacity-0 translate-y-5",
     },
     {
         id: 4,
-        icon: "/feature-icon4.svg",
+        icon: featureIcon4,
         highlight: "AirDrop.",
         text: "Wirelessly share photos, large files, and more between your iPhone, your Mac, & other devices.",
         styles: "right-5 md:right-20 top-[70%] opacity-0 translate-y-5",
     },
     {
         id: 5,
-        icon: "/feature-icon5.svg",
+        icon: featureIcon5,
         highlight: "Writing Tool.",
         text: "Write smarter and faster, whether it’s blogs, essays, or captions, AI helps polish your words.",
         styles: "left-5 md:left-20 top-[90%] opacity-0 translate-y-5",

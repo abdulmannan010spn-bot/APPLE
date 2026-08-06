@@ -34,9 +34,11 @@ const ProductView = () => {
 
           <div className="size-control">
             <div
+
               // BUG FIX: this was setscale(0.06), same as the 14" button above,
               // so clicking 16" never changed anything (scale stayed 0.06 either way).
               // Use a distinct scale value for the 16" option.
+              
               onClick={() => setscale(0.06)}
               className={clsx(
                 scale === 0.06
